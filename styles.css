@@ -1,0 +1,482 @@
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lavenderblush;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* HEADER */
+header {
+    background-color: mistyrose;
+    color: maroon;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0 0;
+    font-size: 36px;
+}
+
+header h2 {
+    margin: 8px 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+    color: deeppink;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+nav a {
+    color: maroon;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: deeppink;
+}
+
+nav span {
+    color: lightpink;
+}
+
+/* OPENING STATUS */
+#opening-status {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* GENERAL BUTTONS */
+button {
+    padding: 10px 16px;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: mediumvioletred;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h3 {
+    color: maroon;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid lightpink;
+    padding-bottom: 8px;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+}
+
+#home h4 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+#home img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightpink;
+    display: block;
+    margin: 15px auto;
+}
+
+#home p {
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.home-link {
+    display: inline-block;
+    background-color: deeppink;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 8px 5px;
+    border-radius: 6px;
+}
+
+.home-link:hover {
+    background-color: mediumvioletred;
+}
+
+/* ABOUT */
+#about ul {
+    padding-left: 25px;
+}
+
+#about li {
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#read-more-btn {
+    margin-top: 8px;
+}
+
+/* SKILLS */
+#skills h4 {
+    color: deeppink;
+    margin-bottom: 8px;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+#skills li {
+    background-color: mistyrose;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid lightpink;
+}
+
+/* PROJECT FILTER BUTTONS */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-btn.active {
+    background-color: maroon;
+}
+
+/* PROJECT TABLE */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+#projects-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#projects-table th,
+#projects-table td {
+    border: 1px solid lightpink;
+    padding: 12px;
+    text-align: left;
+}
+
+#projects-table th {
+    background-color: mistyrose;
+    color: maroon;
+}
+
+#projects-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+/* PROJECT SELECTION CALCULATOR */
+#projects h4 {
+    color: deeppink;
+    margin-top: 28px;
+}
+
+#project-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.option-item {
+    display: block;
+    padding: 12px;
+    border: 1px solid lightpink;
+    border-radius: 6px;
+    background-color: lavenderblush;
+    cursor: pointer;
+}
+
+.option-item input {
+    margin-right: 8px;
+    accent-color: deeppink;
+}
+
+#total {
+    padding: 12px;
+    background-color: mistyrose;
+    color: maroon;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* EDUCATION */
+#education ul {
+    padding-left: 25px;
+}
+
+#education li {
+    margin-bottom: 8px;
+}
+
+/* CONTACT FORM */
+#contact form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightpink;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+#contact textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: deeppink;
+}
+
+#contact form button {
+    margin-top: 15px;
+}
+
+#contact #message {
+    min-height: 130px;
+}
+
+#form-message,
+#age-message {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+#char-count {
+    color: #8b2356;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background-color: mistyrose;
+    color: maroon;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background-color: #222;
+    color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode header h2 {
+    color: lightpink;
+}
+
+body.dark-mode nav a {
+    color: lightpink;
+}
+
+body.dark-mode nav a:hover {
+    color: white;
+}
+
+body.dark-mode section {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.dark-mode section h3,
+body.dark-mode section h4 {
+    color: lightpink;
+}
+
+body.dark-mode .option-item {
+    background-color: #444;
+    border-color: #666;
+}
+
+body.dark-mode #total {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode #projects-table th {
+    background-color: #444;
+    color: lightpink;
+}
+
+body.dark-mode #projects-table th,
+body.dark-mode #projects-table td {
+    border-color: #666;
+}
+
+body.dark-mode #char-count {
+    color: lightpink;
+}
+
+body.dark-mode #contact input,
+body.dark-mode #contact textarea {
+    background-color: #444;
+    color: white;
+    border-color: #777;
+}
+
+body.dark-mode #contact input::placeholder,
+body.dark-mode #contact textarea::placeholder {
+    color: #ddd;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav span {
+        display: none;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #home img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    section h3 {
+        font-size: 22px;
+    }
+
+    #home img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .home-link {
+        display: block;
+        margin: 10px auto;
+        max-width: 220px;
+    }
+
+    #projects-table th,
+    #projects-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
