@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laiba Anees | Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <button type="button" id="theme-btn">
+            Toggle Light/Dark Mode
+        </button>
+
+        <h1>Laiba Anees</h1>
+
+        <h2>Computer Science Student @ IIUI | Aspiring AI Engineer</h2>
+
+        <p id="opening-status" aria-live="polite"></p>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <a href="#home">Home</a>
+            <span>|</span>
+            <a href="#about">About Me</a>
+            <span>|</span>
+            <a href="#skills">Skills</a>
+            <span>|</span>
+            <a href="#projects">Projects</a>
+            <span>|</span>
+            <a href="#education">Education</a>
+            <span>|</span>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home">
+
+            <h3>WELCOME TO MY PORTFOLIO</h3>
+
+            <h4>Laiba Anees</h4>
+
+            <h4>Computer Science Student | Aspiring AI Engineer</h4>
+
+            <img src="images/p2.jpeg" alt="Laiba Anees">
+
+            <p>
+                Hi, I'm Laiba. I'm a Computer Science student with a
+                growing interest in Artificial Intelligence and Generative AI.
+                I enjoy turning ideas into practical projects and exploring
+                technologies that can solve real-world problems.
+            </p>
+
+            <a href="#projects" class="home-link">View My Projects</a>
+
+            <a href="#contact" class="home-link">Get in Touch</a>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+
+            <h3>ABOUT ME</h3>
+
+            <article>
+                <p>
+                    I am a Computer Science student at the International
+                    Islamic University Islamabad. I am interested in
+                    Artificial Intelligence, Generative AI, and web
+                    development.
+                </p>
+
+                <p>
+                    My goal is to become an AI Engineer. I am strengthening
+                    my foundations in HTML, CSS, JavaScript, Python,
+                    Artificial Intelligence, and AI agent development.
+                </p>
+
+                <p id="extra-about" class="hidden">
+                    I enjoy learning new technologies, building practical
+                    projects, solving problems, and improving my programming
+                    skills. Through my academic projects, I aim to develop
+                    solutions that can be useful in real-world situations.
+                </p>
+
+                <button type="button" id="read-more-btn">
+                    Read More
+                </button>
+            </article>
+
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+
+            <h3>MY SKILLS</h3>
+
+            <h4>Programming</h4>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
+            </ul>
+
+            <h4>Technologies</h4>
+
+            <ul>
+                <li>GitHub</li>
+                <li>MySQL</li>
+                <li>FastAPI</li>
+                <li>Next.js</li>
+            </ul>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+
+            <h3>MY PROJECTS</h3>
+
+            <p>
+                Use the category buttons to filter projects. Move your mouse
+                over a project row to highlight it.
+            </p>
+
+            <!-- TASK 7: CATEGORY FILTER -->
+            <div class="filter-buttons">
+
+                <button type="button" class="filter-btn active"
+                    data-category="all">
+                    All
+                </button>
+
+                <button type="button" class="filter-btn"
+                    data-category="ai">
+                    AI Projects
+                </button>
+
+                <button type="button" class="filter-btn"
+                    data-category="web">
+                    Web Projects
+                </button>
+
+                <button type="button" class="filter-btn"
+                    data-category="java">
+                    Java Projects
+                </button>
+
+            </div>
+
+            <!-- TASK 2: TABLE ROW HIGHLIGHTING -->
+            <div class="table-container">
+
+                <table id="projects-table">
+
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr data-category="ai">
+                            <td>AI-Study-Companion</td>
+                            <td>AI</td>
+                            <td>
+                                Helps students understand their syllabus
+                                and generate personalized study plans.
+                            </td>
+                        </tr>
+
+                        <tr data-category="ai">
+                            <td>AI-Resume Screener</td>
+                            <td>AI</td>
+                            <td>
+                                Analyzes resumes against job descriptions
+                                and supports PDF and DOCX files.
+                            </td>
+                        </tr>
+
+                        <tr data-category="java">
+                            <td>CodeQuest AI</td>
+                            <td>Java</td>
+                            <td>
+                                An interactive programming learning game
+                                based on levels and quizzes.
+                            </td>
+                        </tr>
+
+                        <tr data-category="web">
+                            <td>AI Job Hunting Assistant</td>
+                            <td>Web Development</td>
+                            <td>
+                                Helps users discover jobs, match resumes,
+                                track applications, and prepare for interviews.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- TASK 4: INTERACTIVE TOTAL CALCULATOR -->
+            <h4>Project Selection Calculator</h4>
+
+            <p>
+                Select the project topics you want to explore. Each selection
+                has a sample value for demonstrating the total calculator.
+            </p>
+
+            <div id="project-options">
+
+                <label class="option-item">
+                    <input type="checkbox" class="project-checkbox"
+                        value="3">
+                    AI-Study-Companion — 3 points
+                </label>
+
+                <label class="option-item">
+                    <input type="checkbox" class="project-checkbox"
+                        value="4">
+                    AI-Resume Screener — 4 points
+                </label>
+
+                <label class="option-item">
+                    <input type="checkbox" class="project-checkbox"
+                        value="5">
+                    CodeQuest AI — 5 points
+                </label>
+
+                <label class="option-item">
+                    <input type="checkbox" class="project-checkbox"
+                        value="6">
+                    AI Job Hunting Assistant — 6 points
+                </label>
+
+            </div>
+
+            <p id="total" aria-live="polite">
+                Total: 0 points
+            </p>
+
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education">
+
+            <h3>EDUCATION</h3>
+
+            <ul>
+                <li>Degree: BS Computer Science</li>
+                <li>University: International Islamic University Islamabad</li>
+                <li>Expected Completion: 2027</li>
+            </ul>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+
+            <h3>CONTACT ME</h3>
+
+            <p>
+                Have a question or want to discuss a project?
+                Fill out the form below.
+            </p>
+
+            <!-- TASK 1 AND TASK 5: FORM + AGE VERIFICATION -->
+            <form id="contact-form">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                    placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email" required>
+
+                <label for="birth-year">Birth Year:</label>
+                <input type="text" id="birth-year" name="birth-year"
+                    placeholder="e.g. 2002">
+
+                <button type="button" id="verify-age-btn">
+                    Verify Age
+                </button>
+
+                <p id="age-message" aria-live="polite"></p>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject"
+                    placeholder="Enter subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"
+                    placeholder="Write your message"></textarea>
+
+                <!-- TASK 9: CHARACTER COUNTER -->
+                <label for="special-notes">
+                    Special Notes (Maximum 100 Characters):
+                </label>
+
+                <textarea id="special-notes" name="special-notes"
+                    maxlength="100"
+                    placeholder="Enter any additional notes"></textarea>
+
+                <p id="char-count" aria-live="polite">
+                    100 characters remaining
+                </p>
+
+                <button type="submit">Submit</button>
+
+                <!-- TASK 1: PERSONALIZED MESSAGE -->
+                <p id="form-message" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Laiba Anees. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
